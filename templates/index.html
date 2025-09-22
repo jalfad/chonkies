@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial -scale=1.0">
+
+        <title>Baked good (Chonkies)</title>
+        <link rel="icon" href="{{ url_for('static', filename='cookie.ico') }}" type="image/x-icon">
+
+        <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+    
+    </head>
+    <body>
+      <div class="cookies-menu">
+        <nav class="menu">
+          <a href="/"> HOME </a> |
+          <a href="/our_cookies"> OUR COOKIES </a> |
+          <a href="/bundles"> BUNDLES </a> |
+          <a href="/contact">CONTACT US</a> 
+        </nav>
+        </div>
+        
+    
+    <div class = "img_ban">
+    <img src="{{ url_for('static', filename='images/banner.png')}}" alt="banner", width = "200", class="ban">
+    </div>
+    <div class = "cookie_box">
+       <h1 class = "eng">Baked good (Chonkies)</h1>
+       <h4 class = "nih">Yaki-gashi (Chonkies)</h4>
+       
+    </div>
+    <div class = "intro_cookies">
+    <h1 id = "intro_eng" class = "rectangle-box">Welcome cookie lovers! <br>
+           With cookies, life really is better with chunky, soft and made to make you smile!
+           This is where you'll find the cookies that your cravings deserve. <br> 
+           Browse out flavors, pick your favorite, and let's make your day a little sweeter.</h1>
+   
+    </div>
+    
+    
+    <button class = "btn", onclick="translateText()"> Translate</button>
+    
+    <h1 class="label_intro">FRESH FROM OUR OVEN</h1>
+ <script>
+    let isEnglish = true;
+
+    function translateText() {
+      const box = document.getElementById("intro_eng");
+
+      if (isEnglish) {
+        
+        box.textContent = `クッキー好きの皆さん、ようこそ！チョンキーズでは、分厚くて柔らかいクッキーがあなたを笑顔にします。人生はクッキーがある方がずっと素敵です。ここには、あなたの渇望にふさわしいクッキーが揃っています。豊富なフレーバーからお気に入りを選んで、私たちにあなたの一日をほんの少し甘くさせてください。`; // Nihongo Romanized
+
+      } 
+      else {
+        box.textContent = `Welcome cookie lovers!
+                           With cookies, life really is better with chunky, soft and made to make you smile!
+                           This is where you'll find the cookies that your cravings deserve. 
+                           Browse out flavors, pick your favorite, and let's make your day a little sweeter.`;  // English
+      }
+
+      isEnglish = !isEnglish;
+    }
+  </script>
+  <div class = "obj_cookies">
+        <h1 id = "obj_eng" class = "obj_box"> Our goal at Chonkies is simple yet heartfelt: 
+               to turn every craving into a memorable moment. We aim to satisfy your sweet <br>
+               tooth with generous, flavorful cookies, deliver smiles with each site, brighten your day with every order, <br>
+               and wrap you in the comfort of homemade goodness you can count on.</h1>
+    </div>
+    <button class = "obj_btn" onclick="translateTextObj()"> Translate</button>
+    <div class="label_box_obj">
+      <h1 class="label_obj">WHAT WE BAKE FOR</h1>
+    </div>
+    
+    <script>
+        let isEng = true
+        function translateTextObj()
+        {
+            const box = document.getElementById("obj_eng")
+            
+            if (isEng) {
+                box.textContent = `私たちチョンキーズのゴールは、シンプルでありながらハートフルであること。私たちは、たっぷりの風味豊かなクッキーでお客様の甘党を満足させ、一口ごとに笑顔をお届けし、ご注文のたびにお客様の一日を明るくし、頼りになる手作りのおいしさでお客様を心地よく包み込むことを目指しています。`; // Nihongo Romanized
+            }else {
+               box.textContent = `Our goal at Chonkies is simple yet heartfelt: 
+               to turn every craving into a memorable moment. We aim to satisfy your sweet
+               tooth with generous, flavorful cookies, deliver smiles with each site, brighten your day with every order,
+               and wrap you in the comfort of homemade goodness you can count on.`;  // English  
+            }
+            isEng = !isEng;
+
+        }
+
+    
+
+    </script>
+    
+
+    </body>
+</html>

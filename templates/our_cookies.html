@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial -scale=1.0">
+
+        <title>Baked good (Chonkies)</title>
+        <link rel="icon" href="{{ url_for('static', filename='cookie.ico') }}" type="image/x-icon">
+
+        <link rel="stylesheet" href="{{url_for('static', filename = 'css/style2.css')}}">
+        
+        
+    
+    </head>
+    <body>
+        <h1 class="hb">HEALTHY BITES <br> <span class="hbjptit">(ヘルシーな一口)</span></h1>
+        <h4 class="hbdes" id="hbdesid"> Guilt-free goodness packed with oats, seeds, <br> and natural flavors, 
+            perfect for health-conscious <br> snackers or anyone who wants 
+            wholesome energy <br> in every bite. Sugar-Free Delights</h4> 
+        <h1 class = "sl">SUGAR-FREE DELIGHTS <span class = "sljptit">(シュガーフリーのおいしさ)</span></h1>
+        <h4 class = "sldes" id="sldesid">Cookies specially made without refined sugar or  <br> with natural sweeteners, 
+            for elders, people <br> watching sugar intake,  or anyone wanting lighter sweetness.</h4>
+        <h1 class="cc">CHOCOLATE CLASSICS <br> <span class="ccjptit">(定番チョコレート)</span></h1>
+        <h4 class = "ccdes" id="ccdesid">Our ultimate crowd-pleasers: chunky <br> chocolate chip, 
+            double chocolate, <br> white chocolate macadamia, gooey <br> dark 
+             chocolate — all the rich, nostalgic <br> flavors you crave.</h4>
+        <h1 class="ss">SEASONAL SPECIALS <br> <span class="ssjptit">(季節のスペシャル)</span></h1>
+        <h4 class = "ssdes" id="ssdesid">Limited-time cookies inspired by seasons, holidays, and special moments — unique flavors that keep every order exciting.</h4>
+            <div class="cookie-box">
+            
+            <img src="{{ url_for('static', filename='images/healthy_bites.png') }}" class="healthybites" alt="healthybites">
+            <img src="{{ url_for('static', filename='images/sugar_less.png') }}" class="sugarless" alt="sugarless">
+            <img src="{{ url_for('static', filename='images/chocolate.png') }}" class="chocolate" alt="chocolate">
+            <img src="{{ url_for('static', filename='images/seasonal.png') }}" class="seasonal" alt="seasonal">
+        </div>
+        <img src="{{ url_for('static', filename='images/transbut.png') }}" 
+         id="translateBtn" 
+         class="btn-img"
+         alt="Translate Button">
+
+         <script>
+            const translations = {
+            hbdesid: {
+            en : `Guilt-free goodness packed with oats, seeds, <br> and natural flavors, 
+            perfect for health-conscious <br> snackers or anyone who wants 
+            wholesome energy <br> in every bite. Sugar-Free Delights`, 
+            jp : `オート麦、種子、天然香料をたっぷり使った、<br> 罪悪感のないおいしさ。
+                健康志向のスナック好きの方や、<br> 一口ごとに栄養を摂りたい方に最適です。`
+            },
+            sldesid: {
+            en: `Cookies specially made without refined sugar or  <br> with natural sweeteners, 
+            for elders, people <br> watching sugar intake,  or anyone wanting lighter sweetness.`,
+            jp : `精製砂糖不使用、または天然甘味料を使用し<br>たクッキー。ご高齢の方、 
+            糖質を気にされている方、糖尿病の方、<br>または甘さ控えめのお菓子 
+            をご希望の方に最適です。`
+            },
+            ccdesid: {
+                en:`Our ultimate crowd-pleasers: chunky <br> chocolate chip, 
+            double chocolate, <br> white chocolate macadamia, gooey <br> dark 
+             chocolate — all the rich, nostalgic <br> flavors you crave.`,
+             jp: `誰もが虜になる、究極の定番チョコレート：<br>チャンクチョコ 
+             レートチップ、ダブルチョコレート、 ホワイトチョコレートマ 
+             カダミア、とろけるダークチョコレート。どれ<br>
+             も懐かしく濃厚な味わいです。`
+            },
+            ssdesid: {
+            en:`Limited-time cookies inspired by seasons, holidays, 
+            and special moments — unique flavors that keep every order exciting.`,
+             jp: `季節、祝日、特別な瞬間にインスピレーションを得た期間限定クッ
+             キー。ユニークなフレーバーで、ご注文いただくたびにワクワク感をお届けします。`
+            }
+        };
+            let lang = "en";
+
+            document.getElementById("translateBtn").addEventListener("click",() => {
+                lang = (lang === "en") ? "jp" : "en";
+
+                document.getElementById("hbdesid").innerHTML = translations.hbdesid[lang]
+                document.getElementById("sldesid").innerHTML = translations.sldesid[lang]
+                document.getElementById("ccdesid").innerHTML = translations.ccdesid[lang]
+                document.getElementById("ssdesid").innerHTML = translations.ssdesid[lang]
+
+            })
+         </script>
+    </body>
+    </html>
