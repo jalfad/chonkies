@@ -1,0 +1,14 @@
+How to use your python program in other computer
+
+make sure you have git installed in your computer
+
+1.clone mo yung project mula sa GITHUB
+	git clone https://github.com/USERNAME/chonkies.git
+2. gumawa ng bagong virtual environment
+	python -m venv venv
+	or py -m venv venv
+3.activate your venv
+  venv\Scripts\activate.bat
+4.install mo lahat ng dependencies sa requirement.txt
+	pip install -r requirements.txt
+Ayun pwede mo na irun
