@@ -22,17 +22,24 @@
         <h4 class = "sldes" id="sldesid">Cookies specially made without refined sugar or  <br> with natural sweeteners, 
             for elders, people <br> watching sugar intake,  or anyone wanting lighter sweetness.</h4>
         <h1 class="cc">CHOCOLATE CLASSICS <br> <span class="ccjptit">(定番チョコレート)</span></h1>
-        <h4 class = "ccdes" id="ccdesid">Our ultimate crowd-pleasers: chunky <br> chocolate chip, 
-            double chocolate, <br> white chocolate macadamia, gooey <br> dark 
-             chocolate — all the rich, nostalgic <br> flavors you crave.</h4>
+        <h4 class = "ccdes" id="ccdesid">Our ultimate crowd-pleasers: chunky chocolate chip, 
+            double chocolate, white chocolate macadamia, gooey dark 
+             chocolate — all the rich, nostalgic flavors you crave.</h4>
         <h1 class="ss">SEASONAL SPECIALS <br> <span class="ssjptit">(季節のスペシャル)</span></h1>
         <h4 class = "ssdes" id="ssdesid">Limited-time cookies inspired by seasons, holidays, and special moments — unique flavors that keep every order exciting.</h4>
-            <div class="cookie-box">
-            
+          <div class="cookie-box">  
+            <button onclick="window.location.href='hb.html'" class="btn_hb">
             <img src="{{ url_for('static', filename='images/healthy_bites.png') }}" class="healthybites" alt="healthybites">
-            <img src="{{ url_for('static', filename='images/sugar_less.png') }}" class="sugarless" alt="sugarless">
-            <img src="{{ url_for('static', filename='images/chocolate.png') }}" class="chocolate" alt="chocolate">
-            <img src="{{ url_for('static', filename='images/seasonal.png') }}" class="seasonal" alt="seasonal">
+            </button>
+            <button onclick="window.location.href = 'sl.html'" class="btn_sl ">
+                <img src="{{ url_for('static', filename='images/sugar_less.png') }}" class="sugarless" alt="sugarless">
+            </button>    
+            <button onclick="window.location.href = 'cc.html'" class="btn_cc">
+                <img src="{{ url_for('static', filename='images/chocolate.png') }}" class="chocolate" alt="chocolate">
+            </button>
+            <button onclick="window.location.href = 'ss.html'" class="btn_ss">
+                <img src="{{ url_for('static', filename='images/seasonal.png') }}" class="seasonal" alt="seasonal">
+            </button>
         </div>
         <img src="{{ url_for('static', filename='images/transbut.png') }}" 
          id="translateBtn" 

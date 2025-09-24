@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial -scale=1.0">
+        <title>Baked good(Chonkies)</title>
+         <link rel="icon" href="{{ url_for('static', filename='cookie.ico') }}" type="image/x-icon">
+         <link rel="stylesheet" href="{{url_for('static', filename = 'css/hb_style.css')}}">
+    </head>
+        <body>
+            <h1 class = 'hb_h1'>Healthy Bites</h1>
+            <img src="{{ url_for('static', filename='images/Nutty_Energy_Cookie.jpeg') }}" class="nuttyenergycookie" alt="nuttyenergycookie">
+            <h1 class = 'hb_title'> Nutty Energy Cookie <br> <span class="jp_title"> (ナッツエナジークッキー) </span></h1>
+            <h4 class = 'hb_des' id="nec">Almonds, walnuts, oats, flaxseed, a touch of coconut sugar — crunchy and energizing.</h4>
+            <img src="{{ url_for('static', filename='images/Apple_Cinnamon_Glow.jpeg') }}" alt="Apple Cinnamon Glow" class="applecinnamonglow">
+            <h1 class = 'hb_title1'>Apple Cinnamon Cookie <br> <span class="jp_title1">(アップルシナモングロー)</span></h1>
+            <h4 class = 'hb_des1' id="aec">Diced apples, cinnamon, oats, sunflower seeds — warm, fruity sweetness.</h4>
+            <img src="{{ url_for('static', filename='images/Matcha_Morning_Bite.jpeg') }}" alt="Matcha Morning Bite" class="matchamorningbite">
+            <h1 class = 'hb_title2'>Matcha Morning Bite <br> <span class="jp_title2">(まっちゃモーニングバイト)</span></h1>
+            <h4 class = 'hb_des2' id="mmc">Matcha powder, oats, chia seeds, white sesame — earthy and antioxidant-rich.</h4>
+            <img src="{{ url_for('static', filename='images/Berry_Burst_Cookies.jpeg') }}" alt="Berry Burst Cookies" class="berryburstcookies">
+            <h1 class = 'hb_title3'>Berry Burst Cookies <br> <span class="jp_title3">(ベリーバーストクッキー)</span></h1>
+            <h4 class = 'hb_des3' id="bbc">Dried cranberries or blueberries, oats, flaxseed, almond butter — tangy and fiber-filled.</h4>
+
+        <img src="{{ url_for('static', filename='images/transbut.png') }}" 
+         id="translateBtn" 
+         class="btn-img"
+         alt="Translate Button">
+        <script>
+            const translations = {
+                nec:{
+                    en: `Almonds, walnuts, oats, flaxseed, a touch of coconut sugar — crunchy and energizing.`,
+                    jp: `アーモンド、くるみ、オーツ、フラックスシード、ココナッツシュガーを少々—カリカリとエネルギッシュ。`
+                },
+                aec:{
+                    en: `Diced apples, cinnamon, oats, sunflower seeds — warm, fruity sweetness.`,
+                    jp: `きざんだリンゴ、シナモン、オーツむぎ、ひまわりのたね—あたたかく、フルーティーな甘さ`
+                },
+                mmc:{
+                    en: `Matcha powder, oats, chia seeds, white sesame — earthy and antioxidant-rich.`,
+                    jp: `まっちゃパウダー、オーツ、チアシード、しろごまーアースなかんじで、こうさんかゆたか。`
+                },
+                bbc:{
+                    en: `Dried cranberries or blueberries, oats, flaxseed, almond butter — tangy and fiber-filled.`,
+                    jp: `ドライクランベリーかブルーベリー、オートむぎ、アマニ、アーモンドバター―さんみがあり、せんいしつがたっぷり。`
+                }
+            };
+            let language = 'en'; 
+            document.getElementById('translateBtn').addEventListener('click', () => {
+                language = (language === 'en') ? 'jp' : 'en';
+                document.getElementById('nec').innerHTML = translations.nec[language];
+                document.getElementById('aec').innerHTML = translations.aec[language];
+                document.getElementById('mmc').innerHTML = translations.mmc[language];
+                document.getElementById('bbc').innerHTML = translations.bbc[language];
+            });
+
+
+
+        </script>
+        
+        
+        
+        </body>
+
+
+</html>

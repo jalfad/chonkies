@@ -12,6 +12,26 @@ def home():
 def our_cookies():
     return render_template("our_cookies.html")
 
+@app.route("/hb.html")
+
+def hb():
+    return render_template("hb.html")
+
+@app.route("/sl.html")
+
+def sl():
+    return render_template("sl.html")
+
+@app.route("/cc.html")
+
+def cc():
+    return render_template("cc.html")
+
+@app.route("/ss.html")
+
+def ss():
+    return render_template("ss.html")   
+
 if __name__ == "__main__" :
     app.run(debug = True)
 
