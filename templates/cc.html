@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial -scale=1.0">
+        <title>Baked good(Chonkies)</title>
+         <link rel="icon" href="{{ url_for('static', filename='cookie.ico') }}" type="image/x-icon">
+         <link rel="stylesheet" href="{{url_for('static', filename = 'css/cc_style.css')}}">
+    </head>
+        <body>
+            <h1 class = 'hb_h1'>Chocolate Classics</h1>
+            <img src="{{ url_for('static', filename='images/Chunky_Choco_Chip.jpeg') }}" class="chunkychocochip" alt="chunkychocochip">
+            <h1 class = 'hb_title'> Chunky Choco Chip <br> <span class="jp_title"> (チャンキーチョコレートチップ) </span></h1>
+            <h4 class = 'hb_des' id="ccc"> Big, gooey chocolate chips in a buttery dough.</h4>
+            <img src="{{ url_for('static', filename='images/White_Choco_Bliss.jpeg') }}" alt="whitechocobliss" class="whitechocobliss">
+            <h1 class = 'hb_title1'>White Choco Bliss <br> <span class="jp_title1">(しろチョコしあわせ)</span></h1>
+            <h4 class = 'hb_des1' id="wcb">Soft cookie with creamy white chocolate chips.</h4>
+            <img src="{{ url_for('static', filename='images/Caramel_Choco_Drizzle.jpeg') }}" alt="caramelchocodrizzle" class="caramelchocodrizzle">
+            <h1 class = 'hb_title2'>Caramel Choco Drizzle<br> <span class="jp_title2">(キャラメルチョコドリズル)</span></h1>
+            <h4 class = 'hb_des2' id="ccd">Chocolate cookie drizzled with sugar-free or regular caramel.</h4>
+            <img src="{{ url_for('static', filename='images/Matcha_Choco_Chip.jpeg') }}" alt="Matcha Choco Chip" class="matchachocochip">
+            <h1 class = 'hb_title3'>Matcha Choco Chip <br> <span class="jp_title3">(まっちゃちょこちっぷ)</span></h1>
+            <h4 class = 'hb_des3' id="mcc">Green tea dough studded with dark choco chips (unique twist).</h4>
+
+        <img src="{{ url_for('static', filename='images/transbut.png') }}" 
+         id="translateBtn" 
+         class="btn-img"
+         alt="Translate Button">
+        <script>
+            const translations = {
+                ccc:{
+                    en: `Big, gooey chocolate chips in a buttery dough.`,
+                    jp: `バターたっぷりの生地に、大きくてねっとりとしたチョコレートチップが入っています。`
+                },
+                wcb:{
+                    en: `Soft cookie with creamy white chocolate chips.`,
+                    jp: `やわらかいクッキーに、白いチョコレートチップ。`
+                },
+                ccd:{
+                    en: `Chocolate cookie drizzled with sugar-free or regular caramel.`,
+                    jp: `チョコレートクッキーに、ふつうのキャラメルがのせてあります。`
+                },
+                mcc:{
+                    en: `Green tea dough studded with dark choco chips (unique twist).`,
+                    jp: `まっちゃのきじに、ダークチョコレートチップがはいっている。（ゆにーく な ひねり）`
+                }
+            };
+            let language = 'en'; 
+            document.getElementById('translateBtn').addEventListener('click', () => {
+                language = (language === 'en') ? 'jp' : 'en';
+                document.getElementById('ccc').innerHTML = translations.ccc[language];
+                document.getElementById('wcb').innerHTML = translations.wcb[language];
+                document.getElementById('ccd').innerHTML = translations.ccd[language];
+                document.getElementById('mcc').innerHTML = translations.mcc[language];
+            });
+
+
+
+        </script>
+        
+        
+        
+        </body>
+
+
+</html>

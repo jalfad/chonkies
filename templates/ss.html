@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial -scale=1.0">
+        <title>Baked good(Chonkies)</title>
+         <link rel="icon" href="{{ url_for('static', filename='cookie.ico') }}" type="image/x-icon">
+         <link rel="stylesheet" href="{{url_for('static', filename = 'css/ss_style.css')}}">
+    </head>
+        <body>
+            <h1 class = 'hb_h1'>Seasonal Specials</h1>
+            <img src="{{ url_for('static', filename='images/Red_Velvet_Heart_Bite.png') }}" class="redvelvetheartbite" alt="redvelvetheartbite">
+            <h1 class = 'hb_title'> Red Velvet Heart Bite <br> <span class="jp_title"> (レッドベルベット ハートバイト) </span></h1>
+            <h4 class = 'hb_des' id="rvhb"> Soft red velvet cookie shaped like a heart, made with rich cocoa, a hint of vanilla, and topped with a creamy white chocolate drizzle — perfect for sharing love.</h4>
+            <img src="{{ url_for('static', filename='images/Lavender_Dream_Bite.png') }}" alt="lavenderdreambite" class="lavenderdreambite">
+            <h1 class = 'hb_title1'>Lavender Dream Bite <br> <span class="jp_title1">(ラベンダードリームバイト)</span></h1>
+            <h4 class = 'hb_des1' id="ldb">Buttery cookie blended with real lavender petals, vanilla, and specks of white chocolate chips, creating a calming floral sweetness in every bite.</h4>
+            <img src="{{ url_for('static', filename='images/Smores_Campfire.png') }}" alt="s'morescampfire" class="smorescampfire">
+            <h1 class = 'hb_title2'>S'mores Campfire<br> <span class="jp_title2">(スモアキャンプファイヤー)</span></h1>
+            <h4 class = 'hb_des2' id="sc">Chocolate base with marshmallow bits and graham crumbs</h4>
+            <img src="{{ url_for('static', filename='images/Ube_Blizz_Cookie.png') }}" alt="ubeblizzcookie" class="ubeblizzcookie">
+            <h1 class = 'hb_title3'>Ube Blizz Cookie <br> <span class="jp_title3">(ウベ ブリズ クッキー)</span></h1>
+            <h4 class = 'hb_des3' id="ubc">A soft, chewy cookie made with real purple yam (ube) blended into buttery dough, swirled with creamy white chocolate chunks and a touch of vanilla. Every bite gives you that sweet, earthy ube flavor with a snowy “blizzard” of sweetness on top.</h4>
+
+        <img src="{{ url_for('static', filename='images/transbut.png') }}" 
+         id="translateBtn" 
+         class="btn-img"
+         alt="Translate Button">
+        <script>
+            const translations = {
+                rvhb:{
+                    en: `Soft red velvet cookie shaped like a heart, made with rich cocoa, a hint of vanilla, and topped with a creamy white chocolate drizzle — perfect for sharing love.`,
+                    jp: `こころの形をした、やわらかい赤色のベルベットクッキー。リッチなココアとバニラの香りがほんのり。上には、白いクリーム色のチョコレートがかけられていて、愛を分かち合うのにぴったり。`
+                },
+                ldb:{
+                    en: `Buttery cookie blended with real lavender petals, vanilla, and specks of white chocolate chips, creating a calming floral sweetness in every bite.`,
+                    jp: `バターのようなくっきーに、ほんもののラベンダーのはなびら、バニラ、しろいチョコレートチップをまぜて、ひとくちごとにやすらぐはなのようなあまさをうみだします。`
+                },
+                sc:{
+                    en: `Chocolate base with marshmallow bits and graham crumbs`,
+                    jp: `チョコベースにマシュマロとグラハムクラッカー`
+                },
+                ubc:{
+                    en: `A soft, chewy cookie made with real purple yam (ube) blended into buttery dough, swirled with creamy white chocolate chunks and a touch of vanilla. Every bite gives you that sweet, earthy ube flavor with a snowy “blizzard” of sweetness on top.`,
+                    jp: `本物の紫芋（ムラサキイモ）をバター風味の生地に練り込み、クリーミーなホワイトチョコレートチャンクとバニラを渦巻き状に混ぜ込んだ、柔らかくもっちりとしたクッキーです。一口食べるごとに、甘く土っぽいウベの風味が口いっぱいに広がり、その上には雪のように舞い上がるような甘さが広がります。`
+                }
+            };
+            let language = 'en'; 
+            document.getElementById('translateBtn').addEventListener('click', () => {
+                language = (language === 'en') ? 'jp' : 'en';
+                document.getElementById('rvhb').innerHTML = translations.rvhb[language];
+                document.getElementById('ldb').innerHTML = translations.ldb[language];
+                document.getElementById('sc').innerHTML = translations.sc[language];
+                document.getElementById('ubc').innerHTML = translations.ubc[language];
+            });
+
+
+
+        </script>
+        
+        
+        
+        </body>
+
+
+</html>

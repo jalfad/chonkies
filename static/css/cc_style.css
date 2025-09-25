@@ -1,0 +1,169 @@
+body {  
+    background-color: #B19CD9;
+}
+
+.hb_h1 {
+    font-family: 'Cookie',cursive;
+    position: absolute;
+    left:2%;
+    top: 3%;
+    font-size:2rem ;
+    color: #000;  
+}
+.chunkychocochip {
+    width: 170px; 
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    transition: transform 0.5s ease; 
+}
+.chunkychocochip:hover {
+    transform: scale(1.2);
+}
+
+.hb_title {
+    font-family: 'Cookie',cursive;
+    position: absolute;
+    left:13%;
+    top: 20%;
+    font-size:2rem ;
+    color: #000;  
+}
+.jp_title{
+    font-family: 'Cookie',cursive;
+    position: absolute;
+    left:-10%;
+    top: 90%;
+    font-size:1.5rem ;
+    color: red;  
+    white-space: nowrap;
+    
+}
+.hb_des{
+    font-family: 'Cookie',cursive;
+    position: absolute;
+    left:13%;
+    top: 30%;
+    font-size:1.2rem ;
+    color: #000;  
+}
+.whitechocobliss{
+    width: 170px; 
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transition: transform 0.5s ease; 
+}
+.whitechocobliss:hover {
+    transform: scale(1.2);
+}
+.hb_title1 {
+    font-family: 'Cookie',cursive;
+    position: absolute;
+    left:13%;
+    top: 50%;
+    font-size:2rem ;
+    color: #000;  
+}
+.jp_title1 {
+    font-family: 'Cookie',cursive;
+    position: absolute;
+    left:5%;
+    top: 90%;
+    font-size:1.5rem ;
+    color: red;  
+}
+.hb_des1{
+    font-family: 'Cookie',cursive;
+    position: absolute;
+    left:13%;
+    top: 60%;
+    font-size:1.2rem ;
+    color: #000;  
+}
+.caramelchocodrizzle{
+    width: 170px; 
+    display: block;
+    position: absolute;
+    top: 80%;
+    left: 2%;
+    transition: transform 0.5s ease; 
+}
+.caramelchocodrizzle:hover {
+    transform: scale(1.2);
+}
+.hb_title2 {
+    font-family: 'Cookie',cursive;
+    position: absolute;
+    left:13%;
+    top: 80%;
+    font-size:2rem ;
+    color: #000;  
+}
+.jp_title2 {
+    font-family: 'Cookie',cursive;
+    position: absolute;
+    left:5%;
+    top: 90%;
+    font-size:1.5rem ;
+    color: red;  
+}
+.hb_des2{
+    font-family: 'Cookie',cursive;
+    position: absolute;
+    left:13%;
+    top: 90%;
+    font-size:1.2rem ;
+    color: #000;  
+}
+
+.matchachocochip{
+    width: 170px; 
+    display: block;
+    position: absolute;
+    top: 110%;
+    left: 2%;
+    transition: transform 0.5s ease; 
+}
+.matchachocochip:hover {
+    transform: scale(1.2);
+}
+.hb_title3 {
+    font-family: 'Cookie',cursive;
+    position: absolute;
+    left:13%;
+    top: 110%;
+    font-size:2rem ;
+    color: #000;  
+}
+.jp_title3 {
+    font-family: 'Cookie',cursive;
+    position: absolute;
+    left:5%;
+    top: 90%;
+    font-size:1.5rem ;
+    color: red;  
+}
+.hb_des3{
+    font-family: 'Cookie',cursive;
+    position: absolute;
+    left:13%;
+    top: 120%;
+    font-size:1.2rem ;
+    color: #000;  
+}
+.btn-img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    position: absolute;
+    top: 0%;
+    left : 45%;
+}
+
+.btn-img:hover {
+    transform: scale(1.1);
+}
