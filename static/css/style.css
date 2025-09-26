@@ -14,23 +14,38 @@ margin-right: 90px;
 font-family: 'Cookie',cursive;
 color: #8b4513
 }
+.cookie_box_hdr_container{  
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;  
+    width: 100%;
+    padding: auto auto auto auto; 
+    position: relative;  
+    margin: 0% 0% auto 0% ;
+
+}
 .cookie_box {
     background-color: #d2b48c;
     color: #3e2c1c;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
     box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
     width: 90%;
     max-width: 400px;
     font-family: "Comic Sans MS", cursive, sans-serif;
     text-align: center;
-    margin: 20px auto;
-    position: absolute;
-    top: 3%;
-    left: 11%;
+    margin: 3% auto auto 1% ;
 }
-
-.intro_cookies {
+.intro_cookies_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+.intro_cookies { 
     background-color: #d2b48c;
     color: #3e2c1c;
     padding: 10px;
@@ -38,13 +53,24 @@ color: #8b4513
     box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
     font-family: "Comic Sans MS", cursive, sans-serif;
     text-align: center;
-    position: absolute;
-    top:40%;
-    left: 20%;
     font-size: 8px;
-    width : 400px;
-    height: 200px;
+
+    width: 30%;
+    height: 40%;
+    margin: 2% auto auto 15%;
+  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
 }
+.intro_cookies_container .btn{
+  margin-top: 10%;
+  align-self: center;
+}
+
 .obj_cookies {
     background-color: #d2b48c;
     color: #3e2c1c;
@@ -120,22 +146,28 @@ margin: 0;
     .obj_btn:hover {
       background-color: #8b4513;
     }
-
+.cookies_container{
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;  
+    width: 100%;
+    padding: 10px 0px 5px 0px;   
+    position: relative;     
+}
 .cookies-menu{
     background-color: #d2b48c; 
     border-radius: 25px;       
     padding: 15px 30px;
-    display: inline-block;      
-    margin: 20px auto;         
-    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
-    position: absolute;
-    left: 65%;
+    display: inline-flex;              
+    gap: 20px;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);      
+    white-space: nowrap;       
+    max-width:  100%;
+    margin: auto auto auto 65%;
 }
-.cookie-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    
+
+
 .menu a {
     text-decoration: none;
     color: #8b4513;      
@@ -151,39 +183,5 @@ margin: 0;
 
 
 
-   /* Tablet pataas */
-@media (min-width: 768px) {
-  .cookie_box {
-    width: 70%;
-    font-size: 16px;
-  }
-}
-
-/* Desktop pataas */
-@media (min-width: 1200px) {
-  .cookie_box {
-    width: 50%;
-    font-size: 18px;
-  }
-}
-
-   /* Tablet pataas */
-@media (min-width: 768px) {
-  .cookie-menu {
-    width: 70%;
-    font-size: 16px;
-  }
-}
-
-/* Desktop pataas */
-@media (min-width: 1200px) {
-  .cookie-menu {
-    width: 50%;
-    font-size: 18px;
-  }
-}
-
-
-
-
+ 
 

@@ -12,6 +12,7 @@
     
     </head>
     <body>
+    <div class = "cookies_container">
       <div class="cookies-menu">
         <nav class="menu">
           <a href="/"> HOME </a> |
@@ -19,30 +20,36 @@
           <a href="/bundles"> BUNDLES </a> |
           <a href="/contact">CONTACT US</a> 
         </nav>
-        </div>
+      </div>
+    </div>
         
+    <div class = "cookie_box_hdr_container">
+      <div class = "img_ban">
+        <img src="{{ url_for('static', filename='images/banner.png')}}" alt="banner", width = "200", class="ban">
+      </div>
     
-    <div class = "img_ban">
-    <img src="{{ url_for('static', filename='images/banner.png')}}" alt="banner", width = "200", class="ban">
+      <div class = "cookie_box">
+        <h1 class = "eng">Baked good (Chonkies)</h1>
+        <h4 class = "nih">Yaki-gashi (Chonkies)</h4>
+      </div>
     </div>
-    
-    <div class = "cookie_box">
-       <h1 class = "eng">Baked good (Chonkies)</h1>
-       <h4 class = "nih">Yaki-gashi (Chonkies)</h4>
-       
-    </div>
-    <div class = "intro_cookies">
-    <h1 id = "intro_eng" class = "rectangle-box">Welcome cookie lovers! <br>
+
+    <div class = "intro_cookies_container">
+
+      <div class = "intro_cookies">
+        <h1 id = "intro_eng" class = "rectangle-box">Welcome cookie lovers! <br>
            With cookies, life really is better with chunky, soft and made to make you smile!
            This is where you'll find the cookies that your cravings deserve. <br> 
            Browse out flavors, pick your favorite, and let's make your day a little sweeter.</h1>
    
+      </div>
+    
+    
+      <button class = "btn", onclick="translateText()"> Translate</button>
+    
+      <h1 class="label_intro">FRESH FROM OUR OVEN</h1>
     </div>
-    
-    
-    <button class = "btn", onclick="translateText()"> Translate</button>
-    
-    <h1 class="label_intro">FRESH FROM OUR OVEN</h1>
+
  <script>
     let isEnglish = true;
 
