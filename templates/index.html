@@ -12,7 +12,7 @@
     
     </head>
     <body>
-
+      <div class="cookies-container">
       <div class="cookies-menu">
         <nav class="menu">
           <a href="/"> HOME </a> |
@@ -20,6 +20,7 @@
           <a href="/bundles"> BUNDLES </a> |
           <a href="/contact">CONTACT US</a> 
         </nav>
+      </div>
       </div>
     
         
@@ -34,21 +35,35 @@
       </div>
 
 
-    <div class = "intro_cookies_container">
-
-      <div class = "intro_cookies">
-        <h1 id = "intro_eng" class = "rectangle-box">Welcome cookie lovers! <br>
+  
+       <div class="container_introcookies">
+          <h1 class="label_intro">FRESH FROM OUR OVEN</h1>
+          <div class = "intro_cookies">
+          
+          <h1 id = "intro_eng" class = "rectangle-box">Welcome cookie lovers! <br>
            With cookies, life really is better with chunky, soft and made to make you smile!
            This is where you'll find the cookies that your cravings deserve. <br> 
            Browse out flavors, pick your favorite, and let's make your day a little sweeter.</h1>
-   
+    
+          <button class = "btn", onclick="translateText()"> Translate</button>
+          </div>     
+      
+      
+        <div class = "obj_cookies">
+          <h1 id = "obj_eng" class = "obj_box"> Our goal at Chonkies is simple yet heartfelt: 
+               to turn every craving into a memorable moment. We aim to satisfy your sweet <br>
+               tooth with generous, flavorful cookies, deliver smiles with each site, brighten your day with every order, <br>
+               and wrap you in the comfort of homemade goodness you can count on.</h1>
+          <button class = "obj_btn" onclick="translateTextObj()"> Translate</button>
+        </div>
+    
+        <div class="label_box_obj">
+          <h1 class="label_obj">WHAT WE BAKE FOR</h1>
+        </div>
+     
       </div>
+  
     
-    
-      <button class = "btn", onclick="translateText()"> Translate</button>
-    
-      <h1 class="label_intro">FRESH FROM OUR OVEN</h1>
-    </div>
 
  <script>
     let isEnglish = true;
@@ -71,16 +86,7 @@
       isEnglish = !isEnglish;
     }
   </script>
-  <div class = "obj_cookies">
-        <h1 id = "obj_eng" class = "obj_box"> Our goal at Chonkies is simple yet heartfelt: 
-               to turn every craving into a memorable moment. We aim to satisfy your sweet <br>
-               tooth with generous, flavorful cookies, deliver smiles with each site, brighten your day with every order, <br>
-               and wrap you in the comfort of homemade goodness you can count on.</h1>
-    </div>
-    <button class = "obj_btn" onclick="translateTextObj()"> Translate</button>
-    <div class="label_box_obj">
-      <h1 class="label_obj">WHAT WE BAKE FOR</h1>
-    </div>
+
     
     <script>
         let isEng = true
