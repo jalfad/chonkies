@@ -1,3 +1,13 @@
+body{
+    background-image: url('../CONTACT_US.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
 .cookies-container{
   display: flex;
   justify-content: flex-end;   
