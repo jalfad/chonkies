@@ -30,7 +30,12 @@ def cc():
 @app.route("/ss.html")
 
 def ss():
-    return render_template("ss.html")   
+    return render_template("ss.html")  
+
+@app.route("/contact")
+
+def con():
+    return render_template("contacts.html")
 
 if __name__ == "__main__" :
     app.run(debug = True)

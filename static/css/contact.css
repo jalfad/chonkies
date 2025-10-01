@@ -1,0 +1,29 @@
+.cookies-container{
+  display: flex;
+  justify-content: flex-end;   
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cookies-menu {
+    background-color: #d2b48c;
+    border-radius: 25px;
+    font-family: 'Cookie', cursive;
+    width: max-content;
+    padding: 15px;
+    align-self: flex-end;
+    position: relative;
+    top: 40px;
+    
+}
+    
+.menu a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: maroon;
+}
+
+.menu a:hover {
+    color: #fefefe; 
+}
