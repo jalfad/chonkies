@@ -1,0 +1,103 @@
+body{
+    background-image: url('../Bundles.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.cookies-container{
+  display: flex;
+  justify-content: flex-end;   
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cookies-menu {
+    background-color: #d2b48c;
+    border-radius: 25px;
+    font-family: 'Cookie', cursive;
+    width: max-content;
+    padding: 15px;
+    align-self: flex-end;
+    position: relative;
+    top: 40px;
+    
+}
+    
+.menu a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: maroon;
+}
+
+.menu a:hover {
+    color: #fefefe; 
+}
+.con1{
+    width: 500px;
+    height: 500px;
+    aspect-ratio: 1/1;
+    background-color: #ebbb7c;
+    border:2px dotted #ccc;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 300px 100px auto; 
+}
+.print1{
+    font-family: 'Cookie', cursive;
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+.con2{
+    width: 500px;
+    height: 500px;
+    aspect-ratio: 1/1;
+    background-color: #ebbb7c;
+    border:2px dotted #ccc;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: -500px auto; 
+}
+.print2{
+    font-family: 'Cookie', cursive;
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+
+.con3{
+     width: 500px;
+    max-width: 90%;
+    aspect-ratio: 1/1;
+    background-color: #ebbb7c;
+    border: 2px dotted #ccc;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute; 
+    top: 385px;
+    right: 100px;
+    margin: 0;
+}
+.print3{
+    font-family: 'Cookie', cursive;
+    position: relative;
+    top: 30px;
+    text-align: center;
+}

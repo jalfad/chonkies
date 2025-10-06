@@ -37,6 +37,13 @@ def ss():
 def con():
     return render_template("contacts.html")
 
+@app.route("/bundles")
+
+def bundles():
+    return render_template("bundles.html")
+
 if __name__ == "__main__" :
     app.run(debug = True)
+
+
 
