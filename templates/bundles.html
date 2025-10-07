@@ -20,21 +20,62 @@
       </div>
       
       <div class = "con1">
-        <h1 class = "print1">Chonkies Mini Mix (3pcs)  150pesos  <br>
+        <h1 id = "print1" class="a">Chonkies Mini Mix (3pcs)  150pesos  <br>
                         A little box of happiness! Choose 3 cookies, 1 from Healthy 
                         Bites, 1 from Sugar-Free Delights, and 1 from Chocolate Classics or Seasonal Specials.</h1>
       </div>
       <div class="con2">
-      <h1 class="print2">  Chonkies Share Box(6pcs)   300pesos <br>
+      <h1 id="print2" class="b">  Chonkies Share Box(6pcs)   300pesos <br>
                            Made for sharing. Build your box with 6 cookies, 2 from Healthy 
                            Bites, 2 from Sugar-Free Delights, and 2 from Chocolate Classics or Seasonal Specials.</h1>
       </div>
       <div class = "con3">
-         <h1 class="print3"> Chonkies Party Pack(10)  500pesos <br>
+         <h1 id="print3" class="c"> Chonkies Party Pack(10)  500pesos <br>
                              The ultimate cookie crowd-pleaser! Pick any 10 cookies, mix and match freely from all 
                              categories, Healthy, Sugar-Free,Chocolate, or Seasonal Specials. Perfect for parties, 
                              family nights, or just big cravings.</h1>
       </div>
+         <img src="{{ url_for('static', filename='images/transbut.png') }}" 
+         id="translateBtn" 
+         class="btn-img"
+         alt="Translate Button">
+
+         <script>
+            const translations = {
+                a : {
+                    en: `Chonkies Mini Mix (3pcs)  150pesos  <br>
+                         A little box of happiness! Choose 3 cookies, 1 from Healthy 
+                         Bites, 1 from Sugar-Free Delights, and 1 from Chocolate Classics or Seasonal Specials.`,
+                    jap: `ちょんきーずみにみっくす <br>              
+                          ちいさなしあわせばこ！くっきー３つえらんでね。へるしーばいつから１つ、しゅがーふりーでらいつから１つ、ちょこれーとくらしっくすかきせつげんていから１つ。`
+                         },
+                b : {
+                    en: `Chonkies Share Box(6pcs)   300pesos <br>
+                         Made for sharing. Build your box with 6 cookies, 2 from Healthy 
+                         Bites, 2 from Sugar-Free Delights, and 2 from Chocolate Classics or Seasonal Specials.`,
+                    jap: `チャンキーのシェアボックス <br>
+                          みんなでたのしもう。クッキーを6つえらんでね。ヘルシーバイトから2つ、シュガーフリーデライトから2つ、チョコレートクラシックかきせつのスペシャルから2つ`
+                },
+                c : {
+                    en:   `Chonkies Party Pack(10)  500pesos <br>
+                           The ultimate cookie crowd-pleaser! Pick any 10 cookies, mix and match freely from all 
+                           categories, Healthy, Sugar-Free,Chocolate, or Seasonal Specials. Perfect for parties, 
+                           family nights, or just big cravings.`,
+                    jap: `「チャンキーズパーティーパック <br>
+                           さいこうにうれしいクッキーすきなクッキーを10こえらんで、ヘルシー、シュガーフリー、チョコレート、
+                           きせつのおすすめからじゆうにえらべます。パーティーや、かぞくのよる、またはおおきなこいしさにぴったり。」`
+                }  
+            };
+             let lang = "en";
+             document.getElementById("translateBtn").addEventListener("click",() => {
+                lang = (lang === "en") ? "jap" : "en";
+
+                document.getElementById("print1").innerHTML = translations.a[lang]
+                document.getElementById("print2").innerHTML = translations.b[lang]
+                document.getElementById("print3").innerHTML = translations.c[lang]
+
+            })
+         </script>
         
     </body>
 </html>

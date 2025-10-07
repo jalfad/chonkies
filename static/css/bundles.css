@@ -51,7 +51,7 @@ body{
     gap: 10px;
     margin: 300px 100px auto; 
 }
-.print1{
+.a{
     font-family: 'Cookie', cursive;
     position: relative;
     top: 40px;
@@ -71,7 +71,7 @@ body{
     gap: 10px;
     margin: -500px auto; 
 }
-.print2{
+.b{
     font-family: 'Cookie', cursive;
     position: relative;
     top: 40px;
@@ -79,7 +79,7 @@ body{
 }
 
 .con3{
-     width: 500px;
+    width: 500px;
     max-width: 90%;
     aspect-ratio: 1/1;
     background-color: #ebbb7c;
@@ -95,9 +95,23 @@ body{
     right: 100px;
     margin: 0;
 }
-.print3{
+.c{
     font-family: 'Cookie', cursive;
     position: relative;
     top: 30px;
     text-align: center;
+}
+.btn-img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    display: block;           
+    margin: -20px auto;     
+    position: relative;
+    top: -200px;
+
+}
+.btn-img:hover{
+    transform: scale(1.1);
 }
